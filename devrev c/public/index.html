@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevRev Opportunity Summary</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>DevRev Opportunity Summary</h1>
+
+    <form id="summaryForm">
+      <label for="timeframe">Time Frame (in hours/days):</label>
+      <input type="number" id="timeframe" name="timeframe" min="1" required>
+
+      <label for="slackChannel">Slack Channel:</label>
+      <input type="text" id="slackChannel" name="slackChannel" required>
+
+      <button type="submit">Generate Summary</button>
+    </form>
+
+    <div id="loading" class="hidden">Generating summary...</div>
+  </div>
+
+  <script src="./bundle.js"></script>
+</body>
+</html>
